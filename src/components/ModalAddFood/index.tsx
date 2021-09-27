@@ -16,8 +16,8 @@ interface IFood {
 
 interface ModalAddFoodProps {
 	isOpen: boolean;
-	setIsOpen: () => {},
-	handleAddFood: (food: IFood) => {},
+	setIsOpen: () => void;
+	handleAddFood: (food: IFood) => {};
 }
 
 export default function ModalAddFood ({ isOpen, setIsOpen, handleAddFood }: ModalAddFoodProps) {
