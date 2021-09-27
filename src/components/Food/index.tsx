@@ -39,7 +39,7 @@ export default function Food ({ key, food, handleDelete, handleEditFood }: FoodP
   }
 
 	return (
-		<Container key={key}>
+		<Container key={key} available={isAvailable}>
 			<header>
 				<img src={food.image} alt={food.name} />
 			</header>
